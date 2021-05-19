@@ -74,8 +74,6 @@ body{
     text-align: -webkit-center;
 }
 
-/*OBS*/
-
 .nav-menu-item {
     font-size: 18px;
     margin: 13px 0px;
@@ -149,6 +147,8 @@ body{
     display: none;
 }
 
+/* tablet */
+
 @media (max-width: 768px){
 
     body{
@@ -211,6 +211,8 @@ body{
     }
 
 }
+
+/* mobile */
 
 @media (max-width: 480px){
 
