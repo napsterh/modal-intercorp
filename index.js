@@ -1,17 +1,20 @@
 
-const navBurger = document.querySelector(".burger")
-const navMenu = document.querySelector(".nav-menu")
+const openMenu = document.querySelector(".burger")
+const menuContainer = document.querySelector(".menu-container")
+const closeMenu = document.querySelector(".cerrar-menu")
 
 
-navBurger.addEventListener("click", showMenu)
+openMenu.addEventListener("click", abrirMenu)
+closeMenu.addEventListener("click", cerrarMenu)
 
-function showMenu() {
-    navMenu.classList.toggle("nav-menu-show")
+function abrirMenu() {
+    menuContainer.classList.add("show-menu")
 }
 
 function cerrarMenu(){
-    navMenu.classList.toggle("nav-menu-show")
+    menuContainer.classList.remove("show-menu")
 }
+
 
 const openModal = document.querySelector(".open-modal")
 const modalContainer = document.querySelector(".modal-container")
@@ -21,9 +24,9 @@ openModal.addEventListener("click", abrirModal)
 closeModal.addEventListener("click", cerrarModal)
 
 function abrirModal() {
-    modalContainer.classList.add('show')
+    modalContainer.classList.add('show-modal')
 }
 
 function cerrarModal() {
-    modalContainer.classList.remove('show')
+    modalContainer.classList.remove('show-modal')
 }
